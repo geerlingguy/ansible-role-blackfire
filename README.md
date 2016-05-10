@@ -6,7 +6,10 @@ Installs [Blackfire](https://blackfire.io/) on RHEL/CentOS or Debian/Ubuntu.
 
 ## Requirements
 
-None.
+After installation, you need to complete Blackfire setup manually before profiling:
+
+  1. Register the Blackfire agent: `sudo blackfire-agent -register`
+  2. Configure Blackfire: `blackfire config`
 
 ## Role Variables
 
