@@ -1,6 +1,8 @@
 ---
-- name: Ensure pygpgme is in installed.
-  yum: name=pygpgme state=present
+- name: Add packagecloud GPG key.
+  rpm_key:
+    key: "{{ blackfire_gpg_key_url }}"
+    state: present
 
 - name: Add Blackfire repository.
   copy:

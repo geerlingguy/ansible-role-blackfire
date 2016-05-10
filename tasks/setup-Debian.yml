@@ -1,7 +1,7 @@
 ---
 - name: Add packagecloud apt key.
   apt_key:
-    url: https://packagecloud.io/gpg.key
+    url: "{{ blackfire_gpg_key_url }}"
     state: present
 
 - name: Add packagecloud repository.
