@@ -9,3 +9,6 @@
   package:
     name: "{{ blackfire_packages }}"
     state: present
+  notify:
+    - restart webserver
+    - restart php-fpm

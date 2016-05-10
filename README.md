@@ -6,7 +6,7 @@ Installs [Blackfire](https://blackfire.io/) on RHEL/CentOS or Debian/Ubuntu.
 
 ## Requirements
 
-TODO.
+None.
 
 ## Role Variables
 
@@ -20,7 +20,7 @@ The Blackfire packages this role will install on the server. Note that `blackfir
 
 ## Dependencies
 
-None.
+Requires the `geerlingguy.php` role.
 
 ## Example Playbook
 
