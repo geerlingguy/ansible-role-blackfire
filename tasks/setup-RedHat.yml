@@ -1,0 +1,9 @@
+---
+- name: Ensure pygpgme is in installed.
+  yum: name=pygpgme state=present
+
+- name: Add Blackfire repository.
+  copy:
+    src: blackfire.repo
+    dest: /etc/yum.repos.d/blackfire.repo
+    mode: 0644
