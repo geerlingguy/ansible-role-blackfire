@@ -24,7 +24,7 @@ before_install:
 
 script:
   - container_id=$(mktemp)
-  # Run container in detached state
+  # Run container in detached state.
   - 'sudo docker run --detach --volume="${PWD}":/etc/ansible/roles/role_under_test:ro ${run_opts} ${repository}:${version} "${init}" > "${container_id}"'
 
   # Install dependencies.
@@ -46,7 +46,7 @@ script:
   # Ensure Blackfire is installed.
   #- 'sudo docker exec --tty "$(cat ${container_id})" env TERM=xterm TODO'
 
-  # Clean up
+  # Clean up.
   - 'sudo docker stop "$(cat ${container_id})"'
 
 notifications:
