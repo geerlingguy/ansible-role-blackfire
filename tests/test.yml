@@ -6,14 +6,14 @@
     php_enable_php_fpm: true
 
   pre_tasks:
-    # Ubuntu-specific tasks.
     - name: Update apt cache.
       apt: update_cache=yes cache_valid_time=600
       when: ansible_os_family == 'Debian'
 
-    - name: Add repository for PHP 7.
+    # Ubuntu-specific tasks.
+    - name: Add repository for PHP 7 (Ubuntu).
       apt_repository: repo='ppa:ondrej/php'
-      when: ansible_distribution == 'Ubuntu' and ansible_distribution_version != '16.04'
+      when: ansible_distribution == 'Ubuntu'
 
     # Debian-specific tasks.
     - name: Add dependencies for PHP versions (Debian).
