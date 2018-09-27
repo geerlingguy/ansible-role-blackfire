@@ -8,7 +8,7 @@
   uri:
     url: "{{ blackfire_repo_url }}"
     method: HEAD
-    validate_certs: no
+    validate_certs: false
   register: repo_url_stat
 
 - name: Check if Blackfire repository file exists.
