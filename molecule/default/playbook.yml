@@ -3,7 +3,7 @@
   hosts: all
   become: true
 
-vars:
+  vars:
     php_enable_webserver: false
     php_enable_php_fpm: true
 
