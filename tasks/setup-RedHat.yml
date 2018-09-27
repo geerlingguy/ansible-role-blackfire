@@ -23,8 +23,8 @@
   when: not repo_file_stat.stat.exists or repo_url_stat.content_length != repo_file_stat.stat.size
 
 - name: Disable gpg_repocheck for non-bleeding-edge CentOS.
-  lineinfile: >
-    dest=/etc/yum.repos.d/blackfire.repo
-    regexp="^repo_gpgcheck="
-    line="repo_gpgcheck=0"
-    state=present
+  lineinfile:
+    dest: /etc/yum.repos.d/blackfire.repo
+    regexp: "^repo_gpgcheck="
+    line: "repo_gpgcheck=0"
+    state: present
