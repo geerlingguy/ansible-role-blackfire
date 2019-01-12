@@ -4,4 +4,4 @@ blackfire_packages:
   - blackfire-php
 
 blackfire_gpg_key_url: https://packagecloud.io/gpg.key
-blackfire_repo_url: http://packages.blackfire.io/fedora/blackfire.repo
+blackfire_repo_url: https://packages.blackfire.io/fedora/blackfire.repo

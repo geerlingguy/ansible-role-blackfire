@@ -10,7 +10,7 @@
     state: present
   register: packagecloud_repos
   with_items:
-    - "deb http://packages.blackfire.io/debian any main"
+    - "deb https://packages.blackfire.io/debian any main"
 
 - name: Update apt caches after repo is added.
   apt: update_cache=yes

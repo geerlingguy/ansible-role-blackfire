@@ -22,7 +22,7 @@ Available variables are listed below, along with default values (see `defaults/m
 The Blackfire packages this role will install on the server. Note that `blackfire-php` may not work well with XHProf and/or XDebug.
 
     blackfire_gpg_key_url: https://packagecloud.io/gpg.key
-    blackfire_repo_url: http://packages.blackfire.io/fedora/blackfire.repo
+    blackfire_repo_url: https://packages.blackfire.io/fedora/blackfire.repo
 
 Variables used for Blackfire package setup and installation.
 
