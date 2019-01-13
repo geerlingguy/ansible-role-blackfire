@@ -1,7 +1,7 @@
 ---
-- name: Add packagecloud GPG key.
-  rpm_key:
-    key: "{{ blackfire_gpg_key_url }}"
+- name: Install pygpgme.
+  yum:
+    name: pygpgme
     state: present
 
 - name: Check if Blackfire repository file exists.
@@ -15,10 +15,3 @@
     dest: /etc/yum.repos.d/blackfire.repo
     mode: 0644
   when: not repo_file_stat.stat.exists
-
-- name: Disable gpg_repocheck for non-bleeding-edge CentOS.
-  lineinfile:
-    dest: /etc/yum.repos.d/blackfire.repo
-    regexp: "^repo_gpgcheck="
-    line: "repo_gpgcheck=0"
-    state: present
