@@ -5,7 +5,8 @@
     state: present
 
 - name: Check if Blackfire repository file exists.
-  stat: path=/etc/yum.repos.d/blackfire.repo
+  stat:
+    path: /etc/yum.repos.d/blackfire.repo
   register: repo_file_stat
 
 - name: Add Blackfire repository.

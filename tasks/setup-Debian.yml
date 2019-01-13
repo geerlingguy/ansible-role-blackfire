@@ -13,5 +13,6 @@
     - "deb https://packages.blackfire.io/debian any main"
 
 - name: Update apt caches after repo is added.
-  apt: update_cache=yes
+  apt:
+    update_cache: true
   when: packagecloud_repos.changed
