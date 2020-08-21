@@ -16,3 +16,4 @@
     regexp: "^repo_gpgcheck="
     line: "repo_gpgcheck=0"
     state: present
+    mode: 0644
