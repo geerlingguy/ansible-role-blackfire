@@ -1,6 +1,6 @@
 # Ansible Role: Blackfire
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-blackfire.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-blackfire)
+[![Build Status](https://travis-ci.com/geerlingguy/ansible-role-blackfire.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-blackfire)
 
 Installs [Blackfire](https://blackfire.io/) on RHEL/CentOS or Debian/Ubuntu.
 
