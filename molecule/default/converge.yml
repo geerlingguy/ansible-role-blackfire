@@ -33,6 +33,7 @@
         name:
           - apt-transport-https
           - ca-certificates
+          - gnupg2
         state: present
       when: ansible_distribution == "Debian"
 
